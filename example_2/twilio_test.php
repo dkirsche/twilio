@@ -10,7 +10,7 @@ if($DialCallStatus!="completed" && during_biz_hours() ){
 ?>
     <Response>
     <Gather action="extensions.php" timeout="5" numDigits="3" >
-			<Say voice="woman">Thank you for calling blink beverage. If you know your party's extension you may enter it now or stay on the phone while we connect you with a customer service agent.</Say>
+			<Say voice="woman">Thank you for calling INSERT_COMPANY. If you know your party's extension you may enter it now or stay on the phone while we connect you with a customer service agent.</Say>
 		</Gather>
     <Enqueue waitUrl="wait_url.php">agent</Enqueue>
     <Redirect>leave_message.php</Redirect>
